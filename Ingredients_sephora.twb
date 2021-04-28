@@ -1,0 +1,1699 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sephora_website_dataset' inline='true' name='federated.15lom4y17hz6aj1cm91t90hjirp7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sephora_website_dataset' name='textscan.17mf37g1rp1pb61accqvo0jncikk'>
+            <connection class='textscan' directory='/Users/arpitasaqui/Documents/coding-temple-jan2021/final-project' filename='sephora_website_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.17mf37g1rp1pb61accqvo0jncikk' name='sephora_website_dataset.csv' table='[sephora_website_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='brand' ordinal='1' />
+            <column datatype='string' name='category' ordinal='2' />
+            <column datatype='string' name='name' ordinal='3' />
+            <column datatype='string' name='size' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+            <column datatype='integer' name='number_of_reviews' ordinal='6' />
+            <column datatype='integer' name='love' ordinal='7' />
+            <column datatype='real' name='price' ordinal='8' />
+            <column datatype='real' name='value_price' ordinal='9' />
+            <column datatype='string' name='URL' ordinal='10' />
+            <column datatype='boolean' name='MarketingFlags' ordinal='11' />
+            <column datatype='string' name='MarketingFlags_content' ordinal='12' />
+            <column datatype='string' name='options' ordinal='13' />
+            <column datatype='string' name='details' ordinal='14' />
+            <column datatype='string' name='how_to_use' ordinal='15' />
+            <column datatype='string' name='ingredients' ordinal='16' />
+            <column datatype='integer' name='online_only' ordinal='17' />
+            <column datatype='integer' name='exclusive' ordinal='18' />
+            <column datatype='integer' name='limited_edition' ordinal='19' />
+            <column datatype='integer' name='limited_time_offer' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.17mf37g1rp1pb61accqvo0jncikk' name='sephora_website_dataset.csv' table='[sephora_website_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='brand' ordinal='1' />
+            <column datatype='string' name='category' ordinal='2' />
+            <column datatype='string' name='name' ordinal='3' />
+            <column datatype='string' name='size' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+            <column datatype='integer' name='number_of_reviews' ordinal='6' />
+            <column datatype='integer' name='love' ordinal='7' />
+            <column datatype='real' name='price' ordinal='8' />
+            <column datatype='real' name='value_price' ordinal='9' />
+            <column datatype='string' name='URL' ordinal='10' />
+            <column datatype='boolean' name='MarketingFlags' ordinal='11' />
+            <column datatype='string' name='MarketingFlags_content' ordinal='12' />
+            <column datatype='string' name='options' ordinal='13' />
+            <column datatype='string' name='details' ordinal='14' />
+            <column datatype='string' name='how_to_use' ordinal='15' />
+            <column datatype='string' name='ingredients' ordinal='16' />
+            <column datatype='integer' name='online_only' ordinal='17' />
+            <column datatype='integer' name='exclusive' ordinal='18' />
+            <column datatype='integer' name='limited_edition' ordinal='19' />
+            <column datatype='integer' name='limited_time_offer' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brand]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>brand</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[size]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>size</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>love</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[love]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>love</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value_price]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>value_price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[URL]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>URL</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MarketingFlags</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[MarketingFlags]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>MarketingFlags</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MarketingFlags_content</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MarketingFlags_content]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>MarketingFlags_content</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>options</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[options]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>options</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[details]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>details</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>how_to_use</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[how_to_use]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>how_to_use</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ingredients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ingredients]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>ingredients</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>online_only</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[online_only]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>online_only</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exclusive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[exclusive]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>exclusive</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>limited_edition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[limited_edition]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>limited_edition</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>limited_time_offer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[limited_time_offer]</local-name>
+            <parent-name>[sephora_website_dataset.csv]</parent-name>
+            <remote-alias>limited_time_offer</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Marketing Flags' datatype='boolean' name='[MarketingFlags]' role='dimension' type='nominal' />
+      <column caption='MarketingFlags content' datatype='string' name='[MarketingFlags_content]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='sephora_website_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19]' role='measure' type='quantitative' />
+      <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Details' datatype='string' name='[details]' role='dimension' type='nominal' />
+      <column caption='Exclusive' datatype='integer' name='[exclusive]' role='measure' type='quantitative' />
+      <column caption='How To Use' datatype='string' name='[how_to_use]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' caption='Ingredients' datatype='string' default-role='measure' default-type='quantitative' name='[ingredients]' role='dimension' type='nominal' />
+      <column caption='Limited Edition' datatype='integer' name='[limited_edition]' role='measure' type='quantitative' />
+      <column caption='Limited Time Offer' datatype='integer' name='[limited_time_offer]' role='measure' type='quantitative' />
+      <column caption='Love' datatype='integer' name='[love]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Online Only' datatype='integer' name='[online_only]' role='measure' type='quantitative' />
+      <column caption='Options' datatype='string' name='[options]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Size' datatype='string' name='[size]' role='dimension' type='nominal' />
+      <column caption='Value Price' datatype='real' name='[value_price]' role='measure' type='quantitative' />
+      <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:brand:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Antonym&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cinema Secrets&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Erno Laszlo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HUDA BEAUTY&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kosas&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Makeup Eraser&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Origins&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SEPHORA COLLECTION&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;tarte&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Youth To The People&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AERIN&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blinc&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dr Roebuck&apos;s&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Glow Recipe&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;KEVYN AUCOIN&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LightStim&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Natasha Denona&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ReFa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;StackedSkincare&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;TWEEZERMAN&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;alpyn beauty&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Caudalie&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dr. Jart+&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Guerlain&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Koh Gen Do&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lunar Beauty&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nurse Jamie&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ROEN BEAUTY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Summer Fridays&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Volition Beauty&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BeautyBio&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Conture&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;FARSÁLI&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;innisfree&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lab Series For Men&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MDSolarSciences&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Perricone MD&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SK-II&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Beauty Chef&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Armani Beauty&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Clarins&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Estée Lauder&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ILIA&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;KVD Vegan Beauty&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Marc Jacobs Beauty&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;PAT McGRATH LABS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sephora Favorites&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Taste Beauty&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yves Saint Laurent&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AMOREPACIFIC&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Charlotte Tilbury&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Drunk Elephant&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Herbivore&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kopari&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LXMI&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Obagi Clinical&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rosebud Perfume Co.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SUNDAY RILEY&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Wander Beauty&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bite Beauty&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dior&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Givenchy&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kate Somerville&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;LAVANILA&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Murad&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Primera&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sol de Janeiro&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tower 28 Beauty&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aether Beauty&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bobbi Brown&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dr. Barbara Sturm&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;goop&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kiehl&apos;s Since 1851&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;lilah b.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Naturally Serious&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;REN Clean Skincare&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;STELLAR&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Urban Decay&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Benefit Cosmetics&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DERMAFLASH&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;FOREO&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jouer Cosmetics&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;LASHFOOD&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Moroccanoil&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pretty Vulgar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Smashbox&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Too Faced&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Anastasia Beverly Hills&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Christian Louboutin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Edible Beauty&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;High Beauty&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;KORA Organics&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MAELYS Cosmetics&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;OLEHENRIKSEN&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Saint Jane Beauty&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Supergoop!&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Winky Lux&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;beautyblender&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;COOLA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;FENTY BEAUTY by Rihanna&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;IT Cosmetics&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LANCER Skincare&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Melt Cosmetics&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Peter Thomas Roth&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Skin Inc Supplement Bar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The INKEY List&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BECCA&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;COVER FX&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;First Aid Beauty&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jack Black&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lancôme&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MILK MAKEUP&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;philosophy&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Skin Laundry&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Ordinary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Biossance&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dermalogica&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fresh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kaja&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Laura Mercier&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mount Lai&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Prima&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SOBEL SKIN Rx&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Touch In Sol&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Black Up&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;DOMINIQUE COSMETICS&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;GLAMGLOW&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;KENZOKI&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;LAWLESS&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;NARS&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Proactiv&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;St. Tropez&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;trèStiQue&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Artist Couture&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Clarisonic Skincare&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Eve Lom&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;INC.redible&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;L&apos;Occitane&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mario Badescu&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PATRICK TA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shani Darden Skin Care&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tata Harper&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Anthony&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ciaté London&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Erborian&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hourglass&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;KORRES&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MAKE UP FOR EVER&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Omorovicza&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Saturday Skin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;surratt beauty&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wishful&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Algenist&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;boscia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dr. Brandt Skincare&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Grande Cosmetics&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kilian&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lord Jones&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NUDESTIX&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;rms beauty&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;stila&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Violet Voss&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;belif&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Deborah Lippmann&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Flora + Bast&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Josie Maran&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;LANEIGE&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Moon Juice&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PMD&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Skinfix&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;TOM FORD&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;bareMinerals&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CLINIQUE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Farmacy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indie Lee&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;La Mer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Marvis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Peace Out&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shiseido&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tatcha&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alpha-H&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Buxom&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dr. Dennis Gross Skincare&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gucci&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;KNC Beauty&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;lululemon selfcare&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NuFACE&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RODIN olio lusso&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sulwhasoo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Viseart&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sephora_website_dataset.csv' id='sephora_website_dataset.csv_31C7841AA46C421BBB663DF392C44D19'>
+            <properties context=''>
+              <relation connection='textscan.17mf37g1rp1pb61accqvo0jncikk' name='sephora_website_dataset.csv' table='[sephora_website_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='brand' ordinal='1' />
+                  <column datatype='string' name='category' ordinal='2' />
+                  <column datatype='string' name='name' ordinal='3' />
+                  <column datatype='string' name='size' ordinal='4' />
+                  <column datatype='real' name='rating' ordinal='5' />
+                  <column datatype='integer' name='number_of_reviews' ordinal='6' />
+                  <column datatype='integer' name='love' ordinal='7' />
+                  <column datatype='real' name='price' ordinal='8' />
+                  <column datatype='real' name='value_price' ordinal='9' />
+                  <column datatype='string' name='URL' ordinal='10' />
+                  <column datatype='boolean' name='MarketingFlags' ordinal='11' />
+                  <column datatype='string' name='MarketingFlags_content' ordinal='12' />
+                  <column datatype='string' name='options' ordinal='13' />
+                  <column datatype='string' name='details' ordinal='14' />
+                  <column datatype='string' name='how_to_use' ordinal='15' />
+                  <column datatype='string' name='ingredients' ordinal='16' />
+                  <column datatype='integer' name='online_only' ordinal='17' />
+                  <column datatype='integer' name='exclusive' ordinal='18' />
+                  <column datatype='integer' name='limited_edition' ordinal='19' />
+                  <column datatype='integer' name='limited_time_offer' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sephora_website_dataset' name='federated.15lom4y17hz6aj1cm91t90hjirp7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15lom4y17hz6aj1cm91t90hjirp7'>
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[ingredients]' derivation='CountD' name='[ctd:ingredients:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Ingredients' datatype='string' default-role='measure' default-type='quantitative' name='[ingredients]' role='dimension' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Anti-Aging&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;BB &amp; CC Cream&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;BB &amp; CC Creams&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Blemish &amp; Acne Treatments&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Blush&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Bronzer&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Cheek Palettes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Color Correct&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Concealer&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Contour&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Exfoliators&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eye Cream&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eye Creams &amp; Treatments&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eye Masks&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eye Palettes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eye Primer&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eyebrow&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eyeliner&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Eyeshadow&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Masks&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Oils&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Primer&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Serums&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Sunscreen&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Wash&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Wash &amp; Cleansers&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Face Wipes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Facial Peels&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Foundation&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Highlighter&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Balm &amp; Treatment&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Balms &amp; Treatments&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Gloss&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Liner&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Plumper&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Stain&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Sunscreen&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lip Treatments&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lipstick&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Liquid Lipstick&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Makeup&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Makeup Palettes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Makeup Removers&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Mascara&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Moisturizer &amp; Treatments&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Moisturizers&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Night Creams&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Scrub &amp; Exfoliants&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Setting Spray &amp; Powder&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Sheet Masks&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Skincare&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Tinted Moisturizer&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Toners&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.15lom4y17hz6aj1cm91t90hjirp7].[sum:price:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:brand:nk]' />
+              <lod column='[federated.15lom4y17hz6aj1cm91t90hjirp7].[sum:price:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15lom4y17hz6aj1cm91t90hjirp7].[ctd:ingredients:qk]</rows>
+        <cols>([federated.15lom4y17hz6aj1cm91t90hjirp7].[none:category:nk] / [federated.15lom4y17hz6aj1cm91t90hjirp7].[none:brand:nk])</cols>
+      </table>
+      <simple-id uuid='{E6820F6B-171F-48CB-A32E-F6B82CC302D4}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:brand:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:brand:nk]</field>
+            <field>[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:category:nk]</field>
+            <field>[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:details:nk]</field>
+            <field>[federated.15lom4y17hz6aj1cm91t90hjirp7].[none:ingredients:nk]</field>
+            <field>[federated.15lom4y17hz6aj1cm91t90hjirp7].[sum:price:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ABAB8A95-2133-4E97-8F3B-D7D9EE786865}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
